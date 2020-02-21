@@ -1,0 +1,106 @@
+.rectangle1{
+
+	width:200px;
+	height:100px;
+	background-color:skyblue;
+	left:45%;
+	top:40%;
+	transform: translate(6vw, 12vh) rotateZ(90deg);
+	animation-name: wiggle;
+			animation-duration: 5s;
+			animation-direction:alternate;
+			animation-iteration-count: infinite;
+}
+
+.rectangle2{
+
+	position:absolute;
+	width:200px;
+	height:50px;
+	background-color:steelblue;
+	left:45%;
+	top:52%;
+}
+
+.rectangle3{
+
+	position:absolute;
+	width:200px;
+	height:50px;
+	background-color:gold;
+	left:45%;
+	top:58.2%;
+	animation-name: change;
+			animation-duration: 3s;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+}
+
+.rectangle4{
+
+	position:absolute;
+	width:200px;
+	height:87px;
+	background-color:darkorange;
+	left:45%;
+	top:64%;
+
+}
+
+.square1{
+
+	position:absolute;
+	width:30px;
+	height:30px;
+	background-color:peru;
+	left:50.8%;
+	top:48.2%;
+
+}
+
+.square2{
+
+	position:absolute;
+	width:30px;
+	height:30px;
+	background-color:peru;
+	left:50.8%;
+	top:64%;
+	animation-name: drop;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+	@keyframes change {
+			from {
+				background-color: gold;
+			}
+			to {
+				background-color: lightpink;
+			}
+		}
+
+	@keyframes wiggle {
+			from {
+				width: 200px;
+				height: 100px;
+				transform: translate(25vw, 45vh);
+			}
+			to {
+				width: 400px;
+				height: 120px;
+				transform: translate(25vw, 25vh) rotateZ(360deg);
+			}
+		}
+
+		@keyframes drop {
+			from {
+				top:64%;
+			}
+			to {
+				top:78%;
+			}
+		}
+	
+
